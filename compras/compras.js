@@ -236,6 +236,49 @@
     return escapeHtml(s).replaceAll("`", "&#096;");
   }
 
+  function resolveIllustrationPath(path) {
+    const p = String(path || "").trim();
+    if (!p) return "";
+    if (/^(https?:)?\/\//i.test(p) || p.startsWith("/")) return p;
+    return `../${p.replace(/^\.?\//, "")}`;
+  }
+
+  function renderGroupTitle(group) {
+    if (!group?.illustrationImage) return escapeHtml(group?.title || "");
+    const src = resolveIllustrationPath(group.illustrationImage);
+    return `
+      <span class="subgroup-title">
+        <img
+          class="subgroup-illustration-image"
+          src="${escapeAttr(src)}"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        />
+        <span>${escapeHtml(group.title || "")}</span>
+      </span>
+    `;
+  }
+
+  function renderSectionTitle(section) {
+    if (!section?.illustrationImage) return escapeHtml(section?.title || "");
+    const src = resolveIllustrationPath(section.illustrationImage);
+    return `
+      <span class="section-title">
+        <img
+          class="section-illustration-image"
+          src="${escapeAttr(src)}"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        />
+        <span>${escapeHtml(section.title || "")}</span>
+      </span>
+    `;
+  }
+
   function itemKey(sectionId, groupTitle, itemName) {
     return `${sectionId}::${groupTitle || ""}::${itemName}`;
   }
@@ -277,7 +320,7 @@
       ? groups
         .map((g) => {
           const note = g.note ? `<p class="section-note">${escapeHtml(g.note)}</p>` : "";
-          const title = g.title ? `<div class="subgroup-head"><h3>${escapeHtml(g.title)}</h3></div>` : "";
+          const title = g.title ? `<div class="subgroup-head"><h3>${renderGroupTitle(g)}</h3></div>` : "";
           return `
               <div class="menu-subgroup">
                 ${title}
@@ -292,7 +335,7 @@
     return `
       <section class="menu-section reveal" id="${escapeAttr(section.id)}">
         <div class="section-head">
-          <h2>${escapeHtml(section.title || "")}</h2>
+          <h2>${renderSectionTitle(section)}</h2>
           ${section.note ? `<p class="section-note">${escapeHtml(section.note)}</p>` : ""}
         </div>
         ${inner}
