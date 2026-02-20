@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OG Big Brasa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;900&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --bg: #010205;
+            --brand: #F9C537;
+            --brand-strong: #AE5229;
+        }
+
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            background: var(--bg);
+            font-family: 'Lexend', sans-serif;
+        }
+
+        .frame {
+            width: 1200px;
+            height: 630px;
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(800px 520px at 22% 10%, rgba(249, 197, 55, 0.15), transparent 60%),
+                radial-gradient(700px 520px at 85% 80%, rgba(174, 82, 41, 0.25), transparent 55%),
+                var(--bg);
+        }
+
+        .grid {
+            position: absolute;
+            inset: -2px;
+            background-image:
+                linear-gradient(rgba(249, 197, 55, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(249, 197, 55, 0.05) 1px, transparent 1px);
+            background-size: 52px 52px;
+            opacity: 0.6;
+            mask-image: radial-gradient(circle at 50% 50%, black 10%, transparent 75%);
+        }
+
+        .content {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            grid-template-columns: 500px 1fr;
+            align-items: center;
+            padding: 60px;
+            gap: 50px;
+        }
+
+        .logo {
+            width: 480px;
+            height: 480px;
+            display: grid;
+            place-items: center;
+            border-radius: 40px;
+            background: rgba(1, 2, 5, 0.6);
+            border: 2px solid rgba(249, 197, 55, 0.2);
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8), inset 0 0 40px rgba(174, 82, 41, 0.2);
+        }
+
+        .logo img {
+            width: 420px;
+            height: 420px;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+        }
+
+        .txt h1 {
+            margin: 0;
+            color: white;
+            font-size: 72px;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .txt h1 span {
+            color: var(--brand);
+        }
+
+        .txt p {
+            margin: 24px 0 0;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 32px;
+            line-height: 1.4;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 32px;
+            padding: 16px 24px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, rgba(249, 197, 55, 0.15), rgba(174, 82, 41, 0.15));
+            border: 1px solid rgba(249, 197, 55, 0.4);
+            color: #FEFDF9;
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--brand);
+            box-shadow: 0 0 16px var(--brand);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="grid"></div>
+        <div class="content">
+            <div class="logo">
+                <!-- Adjust path relative to where this HTML is viewed to ensure it loads locally -->
+                <img src="assets/img/logo2.png" alt="Big Brasa" />
+            </div>
+            <div class="txt">
+                <h1>Cardápio<br /><span>Big Brasa</span></h1>
+                <p>Hambúrgueres artesanais, Pastéis, Porções e Bebidas geladas.</p>
+                <div class="pill"><span class="dot"></span> Sabor &amp; Qualidade</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="28" fill="#131213"/>
+
+  <!-- Flame / B mark -->
+  <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M64 24
+             C 40 40, 24 64, 40 88
+             C 52 108, 76 108, 88 88
+             C 104 64, 88 40, 64 24 Z" 
+          fill="#AE5229" />
+          
+    <path d="M64 48
+             C 52 60, 44 76, 52 92
+             C 60 104, 68 104, 76 92
+             C 84 76, 76 60, 64 48 Z" 
+          fill="#F9C537" />
+          
+    <path d="M64 72
+             C 60 80, 56 88, 60 96
+             C 64 100, 64 100, 68 96
+             C 72 88, 68 80, 64 72 Z" 
+          fill="#FEFDF9" />
+  </g>
+</svg>
