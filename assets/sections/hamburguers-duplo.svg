@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" role="img" aria-label="Hamburguer duplo realista">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#130f10"/>
+      <stop offset="1" stop-color="#261914"/>
+    </linearGradient>
+    <linearGradient id="bun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4d19a"/>
+      <stop offset="0.6" stop-color="#de9b55"/>
+      <stop offset="1" stop-color="#bf7437"/>
+    </linearGradient>
+    <linearGradient id="meat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a3d2d"/>
+      <stop offset="1" stop-color="#462219"/>
+    </linearGradient>
+    <linearGradient id="cheese" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd85b"/>
+      <stop offset="1" stop-color="#e1a82a"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#000" flood-opacity="0.46"/>
+    </filter>
+  </defs>
+  <rect width="420" height="240" rx="26" fill="url(#bg)"/>
+  <rect x="28" y="174" width="364" height="40" rx="13" fill="#0c0b0a"/>
+
+  <g filter="url(#sh)">
+    <ellipse cx="210" cy="78" rx="140" ry="45" fill="url(#bun)"/>
+    <ellipse cx="210" cy="64" rx="98" ry="22" fill="#f8e0b0" opacity="0.28"/>
+
+    <rect x="78" y="104" width="264" height="18" rx="9" fill="url(#meat)"/>
+    <path d="M84 120h252v13c-20 0-24 6-35 6s-14-6-24-6-14 6-25 6-13-6-24-6-14 6-24 6-14-6-25-6-15 6-24 6-13-6-22-6z" fill="url(#cheese)"/>
+    <rect x="74" y="132" width="272" height="20" rx="10" fill="url(#meat)"/>
+    <path d="M82 150h256v12c-22 0-26 7-37 7s-14-7-26-7-15 7-28 7-14-7-27-7-14 7-27 7-15-7-26-7-13 7-23 7z" fill="url(#cheese)"/>
+    <path d="M82 162c33 17 223 17 256 0v12H82z" fill="#54843a"/>
+    <rect x="72" y="176" width="276" height="30" rx="15" fill="#b86f34"/>
+  </g>
+</svg>

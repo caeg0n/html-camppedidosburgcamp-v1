@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 160" role="img" aria-label="Águas">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141a23"/>
+      <stop offset="1" stop-color="#1e2733"/>
+    </linearGradient>
+    <linearGradient id="bottle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fd5f3"/>
+      <stop offset="1" stop-color="#5aa4d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="260" height="160" rx="18" fill="url(#bg)"/>
+  <path d="M112 28h36v16l12 18v64a12 12 0 0 1-12 12h-24a12 12 0 0 1-12-12V62l12-18z" fill="#2f3d4b"/>
+  <path d="M118 34h24v10l10 16v60a8 8 0 0 1-8 8h-20a8 8 0 0 1-8-8V60l10-16z" fill="url(#bottle)"/>
+  <path d="M118 88h34" stroke="#e8f7ff" stroke-width="6" stroke-linecap="round" opacity="0.45"/>
+  <circle cx="92" cy="110" r="8" fill="#8dc9ea" opacity="0.75"/>
+  <circle cx="178" cy="96" r="6" fill="#8dc9ea" opacity="0.65"/>
+</svg>

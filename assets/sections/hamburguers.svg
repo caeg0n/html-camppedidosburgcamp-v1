@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" role="img" aria-label="Hamburguer artesanal realista">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#120f0e"/>
+      <stop offset="1" stop-color="#241a16"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0" stop-color="#3a2a20" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#120f0e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bunTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5d49d"/>
+      <stop offset="0.55" stop-color="#e5aa62"/>
+      <stop offset="1" stop-color="#c67e3a"/>
+    </linearGradient>
+    <linearGradient id="patty" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7b4030"/>
+      <stop offset="1" stop-color="#4a241a"/>
+    </linearGradient>
+    <linearGradient id="cheese" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd85c"/>
+      <stop offset="1" stop-color="#e6a92d"/>
+    </linearGradient>
+    <linearGradient id="bunBottom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d18a48"/>
+      <stop offset="1" stop-color="#a8632e"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="420" height="240" rx="26" fill="url(#bg)"/>
+  <rect width="420" height="240" rx="26" fill="url(#glow)"/>
+  <rect x="24" y="170" width="372" height="46" rx="14" fill="#0c0b0a"/>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="210" cy="92" rx="136" ry="50" fill="url(#bunTop)"/>
+    <ellipse cx="210" cy="78" rx="96" ry="24" fill="#f7dfa9" opacity="0.35"/>
+    <g fill="#f7e6c0">
+      <ellipse cx="160" cy="72" rx="4.2" ry="2.8"/><ellipse cx="188" cy="66" rx="4.2" ry="2.8"/><ellipse cx="220" cy="67" rx="4.2" ry="2.8"/><ellipse cx="249" cy="74" rx="4.2" ry="2.8"/>
+    </g>
+
+    <rect x="84" y="116" width="252" height="24" rx="12" fill="url(#patty)"/>
+    <g opacity="0.35" fill="#2c140e">
+      <ellipse cx="130" cy="126" rx="22" ry="5"/><ellipse cx="210" cy="128" rx="30" ry="6"/><ellipse cx="292" cy="126" rx="20" ry="5"/>
+    </g>
+
+    <path d="M90 138h240v16c-26 0-28 8-40 8s-15-8-28-8-17 8-30 8-16-8-30-8-17 8-30 8-14-8-28-8-16 8-26 8z" fill="url(#cheese)"/>
+    <path d="M90 150c30 18 210 18 240 0v14H90z" fill="#5b8d3f"/>
+    <rect x="80" y="166" width="260" height="30" rx="15" fill="url(#bunBottom)"/>
+    <ellipse cx="210" cy="191" rx="120" ry="9" fill="#1b120f" opacity="0.35"/>
+  </g>
+</svg>

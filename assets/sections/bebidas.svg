@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" role="img" aria-label="Bebida gelada realista">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151418"/>
+      <stop offset="1" stop-color="#231a28"/>
+    </linearGradient>
+    <linearGradient id="cup" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a3137"/>
+      <stop offset="1" stop-color="#1d1a1f"/>
+    </linearGradient>
+    <linearGradient id="liquid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b43f3f"/>
+      <stop offset="1" stop-color="#6b2222"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="420" height="240" rx="26" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <path d="M136 40h148l-16 166a16 16 0 0 1-16 14h-84a16 16 0 0 1-16-14z" fill="url(#cup)"/>
+    <path d="M150 54h120l-12 132a12 12 0 0 1-12 11h-72a12 12 0 0 1-12-11z" fill="url(#liquid)"/>
+    <path d="M157 64h106" stroke="#d96b6b" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+    <rect x="188" y="24" width="44" height="16" rx="5" fill="#dde0e5"/>
+    <rect x="225" y="17" width="56" height="7" rx="3.5" transform="rotate(23 225 17)" fill="#dde0e5"/>
+    <g fill="#eef4ff" opacity="0.35">
+      <circle cx="184" cy="96" r="10"/><circle cx="212" cy="120" r="8"/><circle cx="232" cy="151" r="7"/><circle cx="197" cy="166" r="6"/>
+    </g>
+  </g>
+</svg>

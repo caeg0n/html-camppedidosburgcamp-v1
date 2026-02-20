@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 160" role="img" aria-label="Energéticos">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14181d"/>
+      <stop offset="1" stop-color="#1f232c"/>
+    </linearGradient>
+    <linearGradient id="can" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#424852"/>
+      <stop offset="1" stop-color="#242a33"/>
+    </linearGradient>
+  </defs>
+  <rect width="260" height="160" rx="18" fill="url(#bg)"/>
+  <rect x="92" y="20" width="76" height="120" rx="14" fill="url(#can)"/>
+  <path d="M142 38 124 82h22l-16 40 34-50h-20l16-34z" fill="#c6ff2e"/>
+  <rect x="104" y="12" width="52" height="12" rx="4" fill="#d3d7de"/>
+</svg>

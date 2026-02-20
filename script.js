@@ -58,7 +58,7 @@ function renderSectionContent(section) {
         (group) => `
         <div class="menu-subgroup">
           <div class="subgroup-head">
-            <h3>${group.title}</h3>
+            <h3>${renderGroupTitle(group)}</h3>
             ${group.note ? `<p class="section-note">${group.note}</p>` : ""}
           </div>
           ${renderItems(group.items, section.sortByPrice || group.sortByPrice)}
@@ -68,6 +68,40 @@ function renderSectionContent(section) {
       .join("");
   }
   return renderItems(section.items, section.sortByPrice);
+}
+
+function renderGroupTitle(group) {
+  if (!group?.illustrationImage) return group?.title || "";
+  return `
+    <span class="subgroup-title">
+      <img
+        class="subgroup-illustration-image"
+        src="${group.illustrationImage}"
+        alt=""
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+      />
+      <span>${group.title || ""}</span>
+    </span>
+  `;
+}
+
+function renderSectionTitle(section) {
+  if (!section?.illustrationImage) return section?.title || "";
+  return `
+    <span class="section-title">
+      <img
+        class="section-illustration-image"
+        src="${section.illustrationImage}"
+        alt=""
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+      />
+      <span>${section.title || ""}</span>
+    </span>
+  `;
 }
 
 function renderMenu(menuData) {
@@ -89,7 +123,7 @@ function renderMenu(menuData) {
       (section) => `
       <section class="menu-section reveal" id="${section.id}">
         <div class="section-head">
-          <h2>${section.title}</h2>
+          <h2>${renderSectionTitle(section)}</h2>
           ${section.note ? `<p class="section-note">${section.note}</p>` : ""}
         </div>
         ${renderSectionContent(section)}

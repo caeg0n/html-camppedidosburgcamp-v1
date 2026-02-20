@@ -2,6 +2,7 @@ window.MENU_DATA = [
   {
     id: "hamburguers",
     title: "Hamburguers",
+    illustrationImage: "assets/sections/hamburguers.svg",
     items: [
       {
         name: "CHICAGO",
@@ -28,6 +29,7 @@ window.MENU_DATA = [
   {
     id: "hamburguers-duplo",
     title: "Hamburguers Duplo",
+    illustrationImage: "assets/sections/hamburguers-duplo.svg",
     items: [
       {
         name: "CHICAGO DUPLO",
@@ -54,6 +56,7 @@ window.MENU_DATA = [
   {
     id: "batata-frita",
     title: "Batata Frita",
+    illustrationImage: "assets/sections/batata-frita.svg",
     items: [
       {
         name: "Pequena (150g)",
@@ -81,6 +84,7 @@ window.MENU_DATA = [
   {
     id: "pastel",
     title: "Pastel",
+    illustrationImage: "assets/sections/pastel.svg",
     note: "Até 3 adicionais grátis.",
     items: [
       {
@@ -109,9 +113,11 @@ window.MENU_DATA = [
   {
     id: "bebidas",
     title: "Bebidas",
+    illustrationImage: "assets/sections/bebidas.svg",
     groups: [
       {
         title: "Refrigerantes",
+        illustrationImage: "assets/subsections/refrigerantes.svg",
         items: [
           { name: "Coca-Cola lata 310ml", price: "R$ 5,00" },
           { name: "Coca-Cola 2L", price: "R$ 15,00" },
@@ -124,6 +130,7 @@ window.MENU_DATA = [
       },
       {
         title: "Energéticos",
+        illustrationImage: "assets/subsections/energeticos.svg",
         items: [
           { name: "Monster", price: "R$ 14,00" },
           { name: "Monster Zero 473ml", price: "R$ 14,00" }
@@ -131,6 +138,7 @@ window.MENU_DATA = [
       },
       {
         title: "Sucos",
+        illustrationImage: "assets/subsections/sucos.svg",
         items: [
           { name: "Del Valle lata 290ml", price: "R$ 6,00" },
           { name: "Del Valle 1L", price: "R$ 12,00" }
@@ -138,6 +146,7 @@ window.MENU_DATA = [
       },
       {
         title: "Águas",
+        illustrationImage: "assets/subsections/aguas.svg",
         items: [
           { name: "Água 510ml", price: "R$ 4,00" },
           { name: "Água com gás", price: "R$ 5,00" },

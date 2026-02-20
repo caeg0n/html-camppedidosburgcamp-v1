@@ -221,6 +221,21 @@ section.menu-section {
   font-size: clamp(1.1rem, 2vw, 1.4rem);
 }
 
+.section-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-illustration-image {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid rgba(249, 197, 55, 0.4);
+  background: #171314;
+}
+
 .menu-subgroup+.menu-subgroup {
   margin-top: 18px;
 }
@@ -239,6 +254,21 @@ section.menu-section {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--brand);
+}
+
+.subgroup-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.subgroup-illustration-image {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid rgba(249, 197, 55, 0.35);
+  background: #171314;
 }
 
 .section-note {

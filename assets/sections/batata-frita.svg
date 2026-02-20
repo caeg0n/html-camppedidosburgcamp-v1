@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" role="img" aria-label="Porção de batata frita realista">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151313"/>
+      <stop offset="1" stop-color="#2a1a15"/>
+    </linearGradient>
+    <linearGradient id="fries" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe082"/>
+      <stop offset="1" stop-color="#e8b53b"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#df5a3d"/>
+      <stop offset="1" stop-color="#ad3724"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="420" height="240" rx="26" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="122" y="30" width="24" height="112" rx="9" fill="url(#fries)"/>
+    <rect x="152" y="20" width="24" height="122" rx="9" fill="url(#fries)"/>
+    <rect x="182" y="36" width="24" height="106" rx="9" fill="url(#fries)"/>
+    <rect x="212" y="24" width="24" height="118" rx="9" fill="url(#fries)"/>
+    <rect x="242" y="34" width="24" height="108" rx="9" fill="url(#fries)"/>
+    <rect x="272" y="28" width="24" height="114" rx="9" fill="url(#fries)"/>
+
+    <path d="M104 118h212l-18 90a16 16 0 0 1-16 14H138a16 16 0 0 1-16-14z" fill="url(#box)"/>
+    <path d="M116 132h188l-12 58a12 12 0 0 1-12 10H140a12 12 0 0 1-12-10z" fill="#e46445"/>
+    <ellipse cx="210" cy="166" rx="56" ry="10" fill="#f6b571" opacity="0.28"/>
+  </g>
+</svg>
