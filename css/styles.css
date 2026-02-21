@@ -81,11 +81,43 @@ footer {
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
 }
 
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 340px;
+}
+
 .brand-text {
   width: 100%;
-  max-width: 280px;
-  justify-self: center;
+  max-width: 250px;
   object-fit: contain;
+}
+
+.hero-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-burger {
+  max-width: 320px;
+  width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 1));
+  animation: floatBurger 6s ease-in-out infinite;
+}
+
+@keyframes floatBurger {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 .hero-delivery {
