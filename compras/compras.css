@@ -2,11 +2,6 @@
   --cart: var(--logo-red);
 }
 
-/* Scrollbar theme */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--logo-red) #0b0b0b;
-}
 
 *::-webkit-scrollbar {
   width: 10px;
