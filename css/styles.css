@@ -28,6 +28,7 @@ body {
   min-height: 100vh;
   padding: 24px;
   overflow-x: hidden;
+  position: relative;
 }
 
 /* Scrollbar theme */
