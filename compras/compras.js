@@ -599,7 +599,7 @@
       const cart = getCart();
       const msg = buildWhatsAppMessage(cart);
       if (!msg) return;
-      const phone = "5566981233010";
+      const phone = "5566981295142";
       const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
       window.open(url, "_blank");
     });

@@ -1,12 +1,12 @@
 :root {
-  --bg: #010101;
-  --panel: #131213;
-  --ink: #FEFDF9;
-  --muted: #E0C4B6;
-  --brand: #F9C537;
-  --brand-strong: #AE5229;
-  --logo-red: #AE5229;
-  --line: #272426;
+  --bg: #000000;
+  --panel: #111111;
+  --ink: #FFFFFF;
+  --muted: #A0A0A0;
+  --brand: #FDB913;
+  --brand-strong: #FF4D00;
+  --logo-red: #FF4D00;
+  --line: #222222;
   --radius: 16px;
 }
 
