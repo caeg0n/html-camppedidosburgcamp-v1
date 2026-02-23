@@ -6,6 +6,10 @@
   --brand: #F9C537;
   --line: #272426;
   --radius: 16px;
+  --campp-safe-area-top-env: env(safe-area-inset-top, 0px);
+  --campp-safe-area-bottom-env: env(safe-area-inset-bottom, 0px);
+  --campp-safe-area-top: var(--campp-safe-area-top-env);
+  --campp-safe-area-bottom: var(--campp-safe-area-bottom-env);
 }
 
 * {
@@ -15,6 +19,8 @@
 body {
   margin: 0;
   padding: 24px;
+  padding-top: calc(24px + var(--campp-safe-area-top));
+  padding-bottom: calc(24px + var(--campp-safe-area-bottom));
   font-family: "Lexend", sans-serif;
   background-color: var(--bg);
   background-image: url('../bg_extracted.jpg');
@@ -214,6 +220,8 @@ code {
 @media (max-width: 900px) {
   body {
     padding: 18px;
+    padding-top: calc(18px + var(--campp-safe-area-top));
+    padding-bottom: calc(18px + var(--campp-safe-area-bottom));
   }
 
   .admin-hero {
